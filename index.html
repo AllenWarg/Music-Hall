@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+
+    <!-- require APlayer -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <!-- require MetingJS -->
+    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    <script src="./anzhiyu.js"></script>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <div id="an_music_bg"
+        style="background-image: url(&quot;https://meting.qjqq.cn/?server=netease&amp;type=pic&amp;id=1369991500930171&quot;);">
+    </div>
+    <div id="page">
+        <h1 class="page-title">音乐馆</h1>
+        <div id="anMusic-page">
+            <div id="anMusic-page-meting">
+                <meting-js id="4899318538" server="netease" type="playlist" mutex="true" preload="auto"
+                    order="list" list-max-height="calc(100vh - 169px)!important">
+                </meting-js>
+            </div>
+        </div>
+        <div id="sidebar">
+            <div id="menu-mask"></div>
+        </div>
+    </div>
+
+    <script>
+        changeMusicBg(false);
+    </script>
+</body>
+
+</html>
